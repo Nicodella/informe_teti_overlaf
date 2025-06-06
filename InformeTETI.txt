@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Evaluación de Plataformas para Smart Home \\ mediante el Método T-Check}
+\author{
+Lucas Samuel Fontes Vega -- 5.395.153-3 \\
+Javier Gómez Nogués -- 3.886.392-3 \\
+Marcelo Marenales Maya -- 5.048.023-4 \\
+Rodrigo Gaston Nicodella Falero -- 4.541.753-9 \\
+Eduardo Fabricio Trinidad Alves -- 4.837.800-9
+}
+
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+Un espacio inteligente se define como un entorno el cual se
+destaca la interconexión de dispositivos que permiten a los usuarios interactuar de manera
+eficiente con los servicios ofrecidos a través de interfaces intuitivas y receptivas. Estos
+dispositivos responden al comportamiento y las necesidades humanas, proporcionando una
+experiencia personalizada. Además, se señala que estos espacios se adaptan a la persona, con
+un enfoque que permite una interacción cooperativa entre los usuarios y el espacio.
+
+Este tipo de espacio puede incluir desde entornos urbanos como ciudades y edificios
+inteligentes, hasta instalaciones pequeñas como hogares o fábricas, con el objetivo de crear un
+ambiente más eficiente, flexible y personalizado, respondiendo a las necesidades de las
+personas de manera proactiva, pero siempre manteniendo el control del usuario.
+
+Un Hogar Inteligente (Smart Home) es un entorno de vida que utiliza la tecnología para integrar
+y automatizar diversas funciones y dispositivos, con el objetivo de mejorar la comodidad, la
+eficiencia, la seguridad y el bienestar de sus ocupantes.
+
+\section{Plataformas para Smart Home}
+
+\subsection{Home Assistant}
+Home Assistant es una plataforma de código abierto para la automatización del hogar, diseñada para ser ejecutada localmente sin depender de servicios en la nube. Permite a los usuarios supervisar, controlar y automatizar dispositivos inteligentes desde una única interfaz centralizada.
+Una de sus fortalezas es la privacidad, ya que todo el procesamiento y almacenamiento de datos se realiza localmente. Además, ofrece una interfaz web personalizable, donde los usuarios pueden diseñar paneles de control a medida según sus necesidades.
+
+Home Assistant es altamente extensible gracias a una comunidad activa que desarrolla integraciones para una amplia gama de dispositivos y servicios, incluyendo luces, sensores, cámaras, asistentes de voz (como Google Assistant y Alexa), y protocolos de comunicación como MQTT, Zigbee y Z-Wave. También permite definir automatizaciones avanzadas usando YAML o un editor gráfico, lo cual facilita la creación de reglas inteligentes sin necesidad de programación compleja.
+
+Gracias a su flexibilidad, escalabilidad y enfoque en el control total por parte del usuario, Home Assistant se ha convertido en una de las soluciones más utilizadas para la creación de espacios inteligentes personalizados.
+
+\subsection{Plataforma B}
+
+\subsection{Plataforma C}
+
+\subsection{Plataforma D}
+
+\subsection{Plataforma E}
+
+\section{Hipótesis y Criterios T-Check}
+
+\subsection{Hipótesis 1: La plataforma es fácil de usar}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma permite a los usuarios configurar una cuenta en menos de 5 minutos.
+    \item La plataforma dispone de documentación y/o tutoriales actualizados (i.e., de la última versión liberada).
+    \item La plataforma puede ser gestionada desde al menos dos de los siguientes tipos de aplicaciones: móvil, desktop y Web.
+\end{itemize}
+
+\subsection{Hipótesis 2: La plataforma provee mecanismos para operar de forma segura}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma permite autenticación con al menos un proveedor externo (p. ej., Google, Facebook).
+    \item La plataforma cuenta con un segundo factor de autenticación.
+    \item La plataforma utiliza mecanismos de cifrado para almacenar los datos.
+    \item La plataforma utiliza protocolos seguros (p. ej., HTTPS) en la transferencia de datos.
+    \item La plataforma brinda mecanismos de control de acceso basado en roles.
+\end{itemize}
+
+\subsection{Hipótesis 3: La plataforma permite integrarse con distintos tipos de dispositivos}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma permite la integración de dispositivos mediante al menos dos de los siguientes mecanismos: Wifi, Bluetooth, AMQP, CoAP, DDS, XMPP, MQTT, LWM2M, Zigbee, Z-Wave.
+    \item La plataforma permite al usuario configurar un dispositivo en no más de 15 minutos.
+    \item La plataforma permite descubrir y añadir nuevos dispositivos automáticamente.
+\end{itemize}
+
+\subsection{Hipótesis 4: La plataforma brinda mecanismos para la integración con otros sistemas}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma ofrece una API para integraciones personalizadas.
+    \item La plataforma permite la integración con al menos un tipo de sistema externo de forma nativa.
+    \item La plataforma soporta al menos dos estándares (p. ej., IFC, CityGML) para facilitar la interoperabilidad con otros sistemas.
+\end{itemize}
+
+\subsection{Hipótesis 5: La plataforma brinda distintos modos de operación en cuanto a servicios en la nube y conexión con dispositivos}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma ofrece un modo de operación completamente local.
+    \item La plataforma soporta la integración con servicios en la nube.
+    \item La plataforma cuenta con un modo offline.
+    \item La plataforma ofrece un feedback visual cuando se pierde la conexión con servicios en la nube o dispositivos.
+    \item La plataforma cuenta con recuperación automática una vez que regresa la conexión con servicios en la nube o dispositivos.
+\end{itemize}
+
+\subsection{Hipótesis 6: La plataforma cuenta con soporte y vigencia tecnológica}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma recibió al menos una actualización funcional o de seguridad en los últimos 12 meses.
+    \item La plataforma brinda información pública sobre las actualizaciones realizadas.
+    \item La plataforma ofrece soporte técnico oficial con tiempos de respuesta promedio inferiores a 3 días hábiles, o cuenta con una comunidad activa que responde consultas en menos de una semana.
+\end{itemize}
+
+\subsection{Hipótesis 7: La plataforma brinda mecanismos de automatización}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma permite la configuración de reglas y umbrales para generar alertas y/o ejecutar comandos de forma automática ante eventos de interés.
+    \item La plataforma procesa y responde a eventos de interés en menos de 5 segundos para garantizar la inmediatez de las alertas y comandos.
+    \item Los cambios en reglas y umbrales en la plataforma se reflejan sin necesidad de reiniciar la plataforma.
+\end{itemize}
+
+\subsection{Hipótesis 8: La plataforma brinda capacidades de análisis}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma dispone de capacidad de almacenamiento histórico de datos.
+    \item La plataforma brinda capacidades de visualización de los datos recolectados.
+    \item La plataforma incluye al menos dos tipos de análisis de datos (p. ej., descriptivo, exploratorio, predictivo, prescriptivo, clústers).
+    \item La plataforma permite la generación de informes.
+\end{itemize}
+
+\subsection{Hipótesis 9: La plataforma se puede adecuar a distintos presupuestos}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma ofrece versiones gratuitas (p. ej., Community Edition).
+    \item La plataforma ofrece distintos planes o versiones según las necesidades y presupuesto disponible.
+    \item Los costos de mantenimiento de la plataforma son proporcionales al uso.
+\end{itemize}
+
+\subsection{Hipótesis 10: La plataforma brinda mecanismos inteligentes especializados}
+
+\subsubsection{Criterios}
+\begin{itemize}
+    \item La plataforma ofrece mantenimiento predictivo de los dispositivos.
+    \item La plataforma ofrece mecanismos para adaptar automáticamente su operación (p. ej., para uso más eficiente de recursos).
+    \item La plataforma ofrece mecanismos nativos basados en Inteligencia Artificial.
+    \item La plataforma permite utilizar sistemas de Inteligencia Artificial externos.
+\end{itemize}
+
+
+\section{Evaluación Home Assistant}
+
+\subsection{Evaluación Hipótesis 1}
+\subsection{Evaluación Hipótesis 2}
+\subsection{Evaluación Hipótesis 3}
+\subsection{Evaluación Hipótesis 4}
+\subsection{Evaluación Hipótesis 5}
+\subsection{Evaluación Hipótesis 6}
+\subsection{Evaluación Hipótesis 7}
+\subsection{Evaluación Hipótesis 8}
+\subsection{Evaluación Hipótesis 9}
+\subsection{Evaluación Hipótesis 10}
+% Puedes continuar con más hipótesis
+
+\section{Evaluación Plataforma B}
+
+\section{Evaluación Plataforma C}
+
+\section{Evaluación Plataforma D}
+
+\section{Evaluación Plataforma E}
+
+\section{Análisis de Resultados y Discusión}
+
+\section{Conclusiones y Trabajo a Futuro}
+
+\begin{thebibliography}{99}
+
+\bibitem{tcheck}
+Autor/es. \textit{Título del artículo/libro sobre T-Check}. Editorial, año.
+
+\bibitem{smartspaces}
+Autor/es. \textit{Título sobre Smart Spaces}. Revista o conferencia, año.
+
+% Agrega más referencias según necesites
+
+\end{thebibliography}
+
+\end{document}
+
